@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<table border="0" align="center" id="table">
+
+    </table>
+
+<script>
+    var x='', i, j,c='circle.png',b='circle_black.png';
+    for(j=0;j<5;j++){
+    x=x + '<tr>';
+    for(i=0;i<12;i++)
+    x=x + '<td><img id="circle" src="circle.png" alt="CIRCLE" style="width:106px" onmouseover="this.src= b" onmouseout="this.src= c"></td>';
+        x=x + '</tr>';}
+    document.getElementById('table').innerHTML=x;
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
